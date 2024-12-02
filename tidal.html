@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/icon type" href="Img/icon.png">
+  <title>TIDAL-Clone</title>
+</head>
+<body class="">
+    <section class="bg-[url('Img/bg1.jpg')] bg-cover lg:h-[700px] md:h-[1000px]">
+        <div class="flex items-center mx-5 justify-between h-24">
+            <div class="flex items-center">
+                <img src="Img/logo.png" alt="Logo" class="w-16 h-16 rounded-xl" />
+                <h1 class="text-white tracking-widest text-3xl font-bold rounded">TIDAL</h1>
+            </div>
+            <div class="text-xl lg:mt-0 flex items-center justify-between w-full font-semibold relative">
+              <button id="burgerButton" class="lg:hidden text-white px-4 py-2 rounded cursor-pointer absolute right-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            
+              <div id="menu" class="hidden lg:flex flex-col lg:flex-row items-center gap-4 justify-center w-full lg:w-auto bg-gray-900 lg:bg-transparent rounded-lg absolute top-14 lg:top-auto right-0 lg:justify-right">
+                <div class="hover:bg-stone-800 text-center text-white px-4 py-2 rounded cursor-pointer">About</div>
+                <div class="hover:bg-stone-800 text-center text-white px-4 py-2 rounded cursor-pointer">Support</div>
+                <div class="hover:bg-stone-800 text-center text-white px-4 py-2 rounded cursor-pointer">Log in</div>
+                <div class="hover:bg-stone-300 bg-white text-center px-4 py-2 rounded cursor-pointer">Start Free Trial</div>
+              </div>
+            </div>
+        </div>
+        <div class="flex flex-col-reverse lg:flex-row items-center mx-10 gap-5 max-h-screen text-white lg:h-[700px]">
+          <div class="w-full lg:w-2/3 flex flex-col gap-5 text-center lg:text-left">
+            <h1 class="text-white text-2xl font-bold sm:text-6xl">Listen.Discover.</h1>
+            <h1 class="text-white text-3xl font-bold sm:text-6xl">Repeat.</h1>
+            <p class="text-2xl">Hear your music in the best-in-class sound.</p>
+            <a href="#" class="hover:bg-stone-300 bg-white text-black text-center py-4 px-5 rounded-lg w-1/3 mx-auto lg:mx-0"><b>Start Free Trial</b></a>
+          </div>
+          <img src="Img/bg-5.png" alt="Logo" class="w-2/3 lg:w-2/4" />
+        </div>
+        
+    </section>
+    <section class="flex flex-col justify-center items-center bg-black h-[700px]">
+      <div class="relative pl-20 w-full overflow-hidden">
+        <div id="slider" class="flex gap-10 transition-transform duration-500">
+          
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-1.png" class="" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">Hear more from your music.</h1>
+              <p class="text-white">
+                Experience your music like never before on TIDAL. Get the best-in-class sound formats like full lossless, HiRes FLAC, and Dolby Atmos.
+              </p>
+              <h1 class="text-white"> > Learn more</h1>
+            </div>
+          </div>
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-2.png" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">110+ million tracks and counting.</h1>
+              <p class="text-white">
+                Discover your next big breakout artist or favorite song in our ad-free music library of over 110+ million tracks.
+              </p>
+            </div>
+          </div>
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-3.png" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">Mixes and Radio.</h1>
+              <p class="text-white">
+                Get a personalized playlist of songs curated to your tastes with My Mix, or explore new music with Artist Radio.
+              </p>
+            </div>
+          </div>
+
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-4.png" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">Live on TIDAL</h1>
+              <p class="text-white">
+                Experience music in real-time with friends, family, or other fans with Live.
+              </p>
+            </div>
+          </div>
+
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-5.png" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">Curated playlists</h1>
+              <p class="text-white">
+                We’re keeping up with what’s next and best in culture. Listen to our team’s original playlists, or stream guest playlists by your favorite artists.
+              </p>
+            </div>
+          </div>
+
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-6.png" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">Offline Mode</h1>
+              <p class="text-white">
+                Listen on your terms on any device, whether you’re offline, off-the-beaten path, at home or in the car.
+              </p>
+            </div>
+          </div>
+
+          <div class="h-[600px] w-[350px] bg-gray-800 rounded-xl shrink-0">
+            <img src="Img/slide-7.png" alt="">
+            <div class="flex flex-col gap-5 p-10">
+              <h1 class="text-bold text-2xl text-white">TIDAL RISING</h1>
+              <p class="text-white">
+                Listen to the next wave of TIDAL RISING artists from around the world as they break conventions and genres.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <button id="prev" class="absolute left-5 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❮</button>
+        <button id="next" class="absolute right-5 top-1/2 -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">❯</button>
+      </div>
+    </section>    
+    
+    <section class="bg-[url('Img/bg3.jpg')] bg-cover ">
+        <div class="text-white pl-10 text-5xl font-extrabold leading-normal pt-20 tracking-wider w-2/3">
+            <h1>Powerful sound for any purpose</h1>
+        </div>
+        <div class="text-white text-lg pt-40 pb-40 justify-start flex flex-col lg:flex-row md:w-full justify-center gap-10 ">
+            <div class="md:w-full justify-center lg:w-1/3 pl-10">
+                <div class="flex flex-wrap ">
+                    <h1 class="font-bold text-4xl">Max</h1>
+                    <p class="text-base pt-10 pt-3 ml-3">(Up to 24-bit, 192 kHz)</p>
+                </div>
+                <p class="mt-5">Experience best-in-class sound quality that opens up every detail with HiRes Free Lossless Audio Codec (HiRes FLAC). Best enjoyed on 5G or WiFi with a hardware connection.</p>
+            </div>    
+            <div class="md:w-full justify-center lg:w-1/3 pl-10">
+                <div class="flex flex-wrap">
+                    <h1 class="font-bold text-4xl">High </h1>
+                    <p class="text-base pt-10 pt-3 ml-3">(Up to 16-bit, 44.1 kHz)</p>
+                </div>
+                <p class="mt-5">Listen to over 110M songs in studio quality with FLAC. As an open source format, every artist can create and deliver high fidelity music with ease.</p>
+            </div>    
+            <div class="md:w-full justify-center lg:w-1/3 pl-10 pr-10">
+                <div class="flex flex-wrap">
+                    <h1 class="font-bold text-4xl">Low </h1>
+                    <p class="text-base pt-10 pt-3 ml-3">(Up to 320 kbps)</p>
+                </div>
+                <p class="mt-5">Get the music you love on the go without worrying about data. Useful when you have a weak signal, are reaching your data cap, or are running out of download space.</p>
+            </div>    
+        </div>
+    </section>
+        
+    <section>
+        <div class="bg-gray-950 text-white p-[50px] flex justify-center items-center flex-col gap-10 lg:h-[650px]">
+            <h1 class="text-[60px] font-bold text-center pb-10">Press play on the perfect TIDAL plan</h1>
+            <div class="flex flex-col lg:flex-row gap-6 justify-center px-4">
+              
+              <div class="bg-gray-900 p-6 rounded-2xl shadow-md border border-yellow-500 flex-1 lg:h-[360px] max-w-sm">
+                <div class="border-gray-700 flex items-center gap-5">
+                  <h2 class="text-yellow-400 text-2xl font-bold mb-2">Individual</h2>
+                  <span class="bg-yellow-950/50 text-yellow-400 text-xs font-bold px-2 py-1 rounded-lg">ADD-ONS AVAILABLE</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Powerful sound, on your terms</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                  <li>• 110M+ tracks in lossless, HiRes FLAC, and Dolby Atmos</li>
+                  <li>• Ad-free, offline listening</li>
+                  <li>• Personalized mixes, editorial playlists, and Live sessions</li>
+                </ul>
+                <div class="mt-2">
+                  <h4 class="text-yellow-400 text-center text-lg font-bold mb-1">Add-on<hr></h4>
+                  <h4 class="text-yellow-400 text-lg font-bold mb-1">DJ-Extension</h4>
+                  <p class="text-gray-300 text-sm">
+                    Catalog access and stem separation via select DJ partners. 
+                    <a href="#" class="text-yellow-500 underline">Learn more</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-gray-900 p-6 rounded-2xl shadow-md border border-yellow-500 flex-1 lg:h-[260px] max-w-sm">
+                <div class="border-gray-700 flex items-center gap-5">
+                  <h2 class="text-yellow-400 text-2xl font-bold mb-2">Family (up to 6 members)</h2>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Music for the entire family</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                  <li>• 110M+ tracks in lossless, HiRes FLAC, and Dolby Atmos</li>
+                  <li>• Ad-free, offline listening</li>
+                  <li>• Clean playlists and curated content for kids</li>
+                  <li>• Each member has an individual account</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-900 p-6 rounded-2xl shadow-md border border-yellow-500 flex-1 lg:h-[340px] max-w-sm">
+                <div class="border-gray-700 flex items-center gap-5">
+                  <h2 class="text-yellow-400 text-2xl font-bold mb-2">Student</h2>
+                  <span class="bg-yellow-950/50 text-yellow-400 text-xs font-bold px-2 py-1 rounded-lg">ADD-ONS AVAILABLE</span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Eligible students save over 50%</h3>
+                <ul class="space-y-2 text-sm text-gray-400">
+                  <li>• 110M+ tracks in lossless, HiRes FLAC, and Dolby Atmos</li>
+                  <li>• Ad-free, offline listening</li>
+                  <li>• Curated study playlists</li>
+                </ul>
+                <div class="mt-2">
+                  <h4 class="text-yellow-400 text-center text-lg font-bold mb-1">Add-on<hr></h4>
+                  <h4 class="text-yellow-400 text-lg font-bold mb-1">DJ-Extension</h4>
+                  <p class="text-gray-300 text-sm">
+                    Catalog access and stem separation via select DJ partners. 
+                    <a href="#" class="text-yellow-500 underline">Learn more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <section>
+        <div class="bg-stone-950 text-white h-[800px] flex flex-col justify-center items-center gap-10 lg:h-[600px]">
+            <h1 class="text-center text-6xl font-bold mb-8">FAQ</h1>
+            <div class="flex flex-col lg:flex-row justify-center gap-8 px-4 md:px-10">
+              
+              <div class="max-w-sm">
+                <h1 class="text-3xl font-bold mb-2">Can I try TIDAL for free?</h1>
+                <p class="text-lg">
+                  If you haven’t tried TIDAL before, you’ll be able to sign up for a 30-day free trial. TIDAL’s free trial gives you complete, ad-free access to TIDAL’s lossless catalog and streaming features at no cost.
+                </p>
+              </div>
+              
+              <div class="max-w-sm">
+                <h1 class="text-3xl font-bold mb-2">Can I bring my playlists on other services to TIDAL?</h1>
+                <p class="text-lg">
+                  Yes, we want your transition to TIDAL to be as smooth as possible. Start importing your favorite playlists <a href="#" class="text-blue-400 underline">here</a>.
+                </p>
+              </div>
+              
+              <div class="max-w-sm">
+                <h1 class="text-2xl font-bold mb-2">What plan types does TIDAL offer?</h1>
+                <p class="text-lg">
+                  TIDAL’s most popular plan is the Individual plan. In addition to that, we offer a high-value Family plan (for you plus up to 5 members), and a discounted Student plan.
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-20 flex items-center justify-center lg:h-[700px]" role="contentinfo">
+        <div class="container mx-12 grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-4 gap-20">
+        
+          <div>
+            <h4 class="text-lg font-semibold mb-5 text-gray-500">Get Started</h4>
+            <ul class="space-y-7 text-xl">
+              <li><a href="#" class="hover:underline">Download TIDAL</a></li>
+              <li><a href="#" class="hover:underline">Pricing & Plans</a></li>
+              <li><a href="#" class="hover:underline">Transfer Music</a></li>
+              <li><a href="#" class="hover:underline">Supported Devices</a></li>
+              <li><a href="#" class="hover:underline">Get Support</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h4 class="text-lg font-semibold mb-5 text-gray-500">Discover TIDAL</h4>
+            <ul class="space-y-7 text-xl">
+              <li><a href="#" class="hover:underline">About</a></li>
+              <li><a href="#" class="hover:underline">For Music</a></li>
+              <li><a href="#" class="hover:underline">For Artists</a></li>
+              <li><a href="#" class="hover:underline">Culture</a></li>
+              <li><a href="#" class="hover:underline">Magazine</a></li>
+              <li><a href="#" class="hover:underline">Originals</a></li>
+              <li><a href="#" class="hover:underline">Rising</a></li>
+              <li><a href="#" class="hover:underline">Sound Quality</a></li>
+              <li><a href="#" class="hover:underline">TIDAL Connect</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h4 class="text-xl font-semibold mb-5 text-gray-500">Account</h4>
+            <ul class="space-y-7 text-xl">
+              <li><a href="#" class="hover:underline">Sign Up</a></li>
+              <li><a href="#" class="hover:underline">Redeem Voucher</a></li>
+              <li><a href="#" class="hover:underline">Redeem Giftcard</a></li>
+              <li><a href="#" class="hover:underline">Manage Account</a></li>
+            </ul>
+          </div>
+      
+          <div>
+            <h4 class="text-xl font-semibold mb-5 text-gray-500">Company</h4>
+            <ul class="space-y-7 text-xl">
+              <li><a href="#" class="hover:underline">What is TIDAL?</a></li>
+              <li><a href="#" class="hover:underline">Partners</a></li>
+              <li><a href="#" class="hover:underline">Careers</a></li>
+              <li><a href="#" class="hover:underline">Press</a></li>
+            </ul>
+            <button class="mt-4 border-2 rounded-lg border-teal-500 hover:bg-teal-900 text-teal-500 font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+              Start Free Trial
+            </button>
+          </div>
+        </div>
+      </footer>
+</body>
+<script src="script.js"></script>
+</html>
+
